@@ -1,0 +1,11 @@
+{
+  "name": "Magic-Shirt-Scraper",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node scraper.js"
+  },
+  "dependencies": {
+    "json2csv": "3.7.3",
+    "osmosis": "1.1.2"
+  }
+}
