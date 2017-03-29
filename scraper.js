@@ -32,7 +32,9 @@ function connectionError(comment) {
 function toCSV() {
     // Get and format date for file
     let today = new Date();
-    today = today.getFullYear() + '-' + today.getMonth() + '-' + today.getDay();
+    // Year - Month is zero indexed so I added +1 - Day
+    today = today.getFullYear() + '-' + (today.getMonth()+1) + '-' + today.getDate();
+
 
     // Generate CSV Object
     let csv = json2csv({ data: shirtsArray, fields: fields });
